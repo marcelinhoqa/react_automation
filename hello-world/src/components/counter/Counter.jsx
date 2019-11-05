@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import './Counter.css'
 class Counter extends Component{
 
@@ -11,11 +12,11 @@ class Counter extends Component{
       }  
       this.increment = this.increment.bind(this)
     }
-
+//this.props.by faz referencia ao by que está dentro da classe App
     render(){
     return (
         <div className="counter">
-            <button onClick = {this.increment}>+1</button>
+            <button onClick = {this.increment}>+{this.props.by}</button>
             <span className="count">{this.state.counter}</span>
         </div>
          )
@@ -23,11 +24,17 @@ class Counter extends Component{
 
     increment(){ // atualiza o estado - Contador ++ 
         this.setState({
-            counter: this.state.counter + 1
+            counter: this.state.counter + this.props.by
         });
     }
 }
 
+Counter.defaultProps = {
+    by : 1
+}
+Counter.propTypes = {
+    by : PropTypes.number
+}
 
 
 export default Counter
