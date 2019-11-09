@@ -3,6 +3,7 @@ import FirstComponent, {SecondComponent} from './components/learning-example/Fir
 import Counter from './components/counter/Counter.jsx'
 import logo from './logo.svg';
 import './App.css';
+import TodoApp from './components/todo/TodoApp.jsx';
 
 // para exibir o component, foi necessário adicionar o component 
 //    <FirstComponent></FirstComponent>
@@ -21,9 +22,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Counter by={1}/>  
+      { /* <Counter by={1}/>  
         <Counter by={5}/>
-        <Counter by={10}/>
+    <Counter by={10}/> */}
+    <TodoApp/>
       </div>
     );
   }

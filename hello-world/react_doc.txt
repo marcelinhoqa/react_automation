@@ -1,0 +1,69 @@
+criar projeto react
+
+instalar o nodejs
+instalar o react
+npm install -g create-react-app
+
+criar o projeto pelo prompt de comando com o comando
+
+create-react-app hello-world
+
+com esse comando é criado essa raiz 
+
+node_modules/
+src/
+.gitignore
+README.md
+favicon.ico
+index.html
+package.json
+
+Ao abrirmos o package.json, iremos notar que há somente uma dependência de desenvolvimento chamada react-scripts e três scripts:
+
+start: react-scripts start
+build: react-scripts build
+eject: react-scripts eject
+
+
+
+O script start iniciará nossa aplicação com base nos componentes que estão no diretório src/. Na criação, ele irá conter os seguintes arquivos:
+
+
+
+App.css
+App.js
+index.css
+index.js
+logo.svg
+
+
+
+Ao alterar qualquer um dos arquivos e salvar, eles serão recompilados automaticamente e o browser também será atualizado. Se erros forem encontrados, eles são exibidos no console.
+
+Uma vez que o projeto está pronto para ir para produção, podemos utilizar o script build. Ele será responsável por criar o diretório build/, onde o código estará pronto para produção.
+
+No entanto, se em algum momento você não quiser mais depender da ferramenta para o desenvolvimento da sua aplicação, você pode executar o comando eject. Ele irá remover permanentemente a configuração padrão do Create React App e criará um diretório config/ com todas as “configurações cruas” que ele utiliza por padrão. Isso significa que o seu package.json será modificado para obter as dependências do Babel, Webpack e afins.
+
+
+Success! Created hello-world at C:\Users\marce\Desktop\react\hello-world
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd hello-world
+  npm start
+
+https://www.google.com/search?q=react+router+history+api&oq=react+router+history+api&aqs=chrome..69i57j0l4.5128j0j7&sourceid=chrome&ie=UTF-8
