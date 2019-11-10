@@ -3,6 +3,7 @@ import FirstComponent, {SecondComponent} from './components/learning-example/Fir
 import Counter from './components/counter/Counter.jsx'
 import logo from './logo.svg';
 import './App.css';
+import './bootstrap.css'
 import TodoApp from './components/todo/TodoApp.jsx';
 
 // para exibir o component, foi necessário adicionar o component 
