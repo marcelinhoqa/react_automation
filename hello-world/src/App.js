@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import FirstComponent, {SecondComponent} from './components/learning-example/FirstComponent.jsx'
-import Counter from './components/counter/Counter.jsx'
-import logo from './logo.svg';
+//import FirstComponent, {SecondComponent} from './components/learning-example/FirstComponent.jsx'
+//import Counter from './components/counter/Counter.jsx'
+//import logo from './logo.svg';
 import './App.css';
 import './bootstrap.css'
 import TodoApp from './components/todo/TodoApp.jsx';
@@ -32,24 +32,24 @@ class App extends Component {
   }
 }
 
-class AllComponent extends Component{
-  render(){
-    return (
-      <div className="allComponent">
-        My hello worlds
-        <FirstComponent></FirstComponent>
-        <SecondComponent></SecondComponent>
-        <ThirdComponent></ThirdComponent>
-      </div>
-    );
-  }
-}
+// // class AllComponent extends Component{
+// //   render(){
+// //     return (
+// //       <div className="allComponent">
+// //         My hello worlds
+//         <FirstComponent></FirstComponent>
+//         <SecondComponent></SecondComponent>
+//         <ThirdComponent></ThirdComponent>
+//       </div>
+//     );
+//   }
+// }
 
-function ThirdComponent(){
-  return (
-    <div  className="thirdComponent">
-      Third Component
-    </div>
-  )
-}
+// function ThirdComponent(){
+//   return (
+//     <div  className="thirdComponent">
+//       Third Component
+//     </div>
+//   )
+// }
 export default App;

@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
-import AuthenticationService from './AuthenticationService.js'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import AuthenticatedRoute from './AuthenticatedRoute.jsx'
 import LoginComponent from './LoginComponent.jsx'
 import ListTodosComponent from './ListTodosComponent.jsx'
@@ -39,19 +38,19 @@ function ErrorComponent(){
     return <div> An Error Ocurred. I don't know what to do! Contat Support  </div>
 }
 
-function ShowInvalidCredentials(props){
-    if(props.hasLoginFailed){
-        return <div> Invalid Credentials</div>
-    }
-    return null
-}
+// function ShowInvalidCredentials(props){
+//     if(props.hasLoginFailed){
+//         return <div> Invalid Credentials</div>
+//     }
+//     return null
+// }
 
-function ShowLoginSucess(props){
-    if(props.showSucessMessage){
-        return <div> Login Sucessful</div>
-    }
-    return null
-}
+// function ShowLoginSucess(props){
+//     if(props.showSucessMessage){
+//         return <div> Login Sucessful</div>
+//     }
+//     return null
+// }
 
 
 export default TodoApp

@@ -1,7 +1,7 @@
 
 import React, {Component} from 'react'
 import AuthenticationService from './AuthenticationService.js'
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
+import {BrowserRouter as Link} from 'react-router-dom'
 
 class HeaderComponent extends Component{
     render(){
@@ -10,7 +10,7 @@ class HeaderComponent extends Component{
         return (
        <header>
            <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-               <div><a href ="#" className="navbar-brand">AutoHand</a></div>
+               <div><a href ="/autohand" className="navbar-brand">AutoHand</a></div>
                <ul className="navbar-nav">
                    {isUserLoggedIn && <li><Link className="nav-link" to="/welcome">Home</Link></li>}
                    {isUserLoggedIn && <li><Link className="nav-link" to="/todos">Todos</Link></li>}
